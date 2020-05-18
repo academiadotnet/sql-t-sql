@@ -1,0 +1,22 @@
+USE [AcademiaDB]
+GO
+
+/****** Object:  Table [dbo].[Vendedor]    Script Date: 14/05/2020 17:26:56 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Vendedor](
+	[VendedorId] [int] IDENTITY(1,1) NOT NULL,
+	[Nome] [varchar](25) NOT NULL,
+	[NumeroCracha] [varchar](50) NOT NULL,
+	[Ativo] [bit] NOT NULL,
+ CONSTRAINT [PK_Vendedor] PRIMARY KEY CLUSTERED 
+(
+	[VendedorId] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
